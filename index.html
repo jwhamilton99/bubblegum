@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<style>
+			body {
+				background-image: url('dab.gif');
+			}
+		</style>
+		<script>
+			function play() {
+				var audio = new Audio('bubblegum.mp3');
+				audio.addEventListener('ended', function() {
+					this.currentTime = 0;
+					this.play();
+				}, false);
+				audio.play();
+			}
+			play();
+		</script>
+	</head>
+	<body></body>
+</html>
