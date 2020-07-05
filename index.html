@@ -3,7 +3,12 @@
 		<title>Bubblegum</title>
 		<style>
 			body {
-				background-image: url('dab.gif');
+				background-color: black;
+			}
+			button {
+				height:100%;
+				width:100%;
+				font-size:200px;
 			}
 		</style>
 		<script>
@@ -14,11 +19,12 @@
 					this.play();
 				}, false);
 				audio.play();
+				document.body.style.backgroundImage = "url('dab.gif')";
 				document.getElementById("button").style.visibility = "hidden";
 			}
 		</script>
 	</head>
 	<body>
-		<button onclick="play()" id="button">Play</button>
+		<button onclick="play()" id="button">lets go!</button>
 	</body>
 </html>
