@@ -14,9 +14,11 @@
 					this.play();
 				}, false);
 				audio.play();
+				document.getElementById("button").style.visibility = "hidden";
 			}
-			play();
 		</script>
 	</head>
-	<body></body>
+	<body>
+		<button onclick="play()" id="button">Play</button>
+	</body>
 </html>
